@@ -9,6 +9,8 @@ window.addEventListener("click", (event) => {
   console.log("y ", event.pageY);
   console.log(dot.style.left);
   console.log(dot.style.top);
+  let xy = document.querySelector(".dot");
+
   console.log(dot.getBoundingClientRect());
 
   document.body.appendChild(dot);
