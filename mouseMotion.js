@@ -3,7 +3,7 @@ let bar = document.querySelector("div");
 
 bar.addEventListener("mousedown", (event) => {
   console.log(event.button);
-  if (event.button == 0) {
+  if (event.buttons == 0) {
     lastX = event.clientX;
     window.addEventListener("mousemove", moved);
     event.preventDefault();
@@ -11,7 +11,7 @@ bar.addEventListener("mousedown", (event) => {
 });
 
 function moved(event) {
-  if (event.button == 0) {
+  if (event.buttons == 0) {
     window.removeEventListener("mousemove", moved);
   } else {
     let distance = event.clientX - lastX;
