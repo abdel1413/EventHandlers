@@ -70,9 +70,9 @@ window.addEventListener("mousemove", (event) => {
       schedule = null;
     }, 500);
   }
-  console.log(event);
-  console.log(schedule);
+  //console.log(event);
+  //console.log(schedule);
   schedule = event;
-  console.log("sce", schedule);
+  // console.log("sce", schedule);
 });
 document.body.appendChild(p);
